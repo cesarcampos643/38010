@@ -1,0 +1,685 @@
+*{
+    margin: 0px;
+    font-size: 10px;
+    font-family: Roboto;
+    box-sizing: border-box;
+    padding: 0%;
+}
+
+@font-face  {
+    font-family: Roboto;
+    src:  url(Roboto-Regular.ttf);
+}
+
+/* FORMATO LANDING */
+.divider {
+    grid-area: divider;
+    border-color: black;
+    border-width: 2px;
+}
+
+.general_center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: center;
+}
+    
+
+/* FIN HEADER */
+
+/* INICIO MAIN */
+
+.main_title {
+    grid-area: title;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 0px 0px 7px yellow;
+    font-family: Roboto;
+    margin:0%;
+    background-image: url('../assets/img/backgroundimage.png');
+    background-size: cover;
+    height: 110px;
+    display: flex;
+}
+
+.main_description {
+    grid-area: desc;
+    color: #777777;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main_subtitle {
+    grid-area: subtitle;
+    display: flex;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0px 0px 7px yellow;
+    font-family: Roboto;
+    margin:0%;
+
+}
+
+.main_servicios_texto {
+    display:flex;
+
+}
+
+.main_servicios_imagen {
+    grid-area: imgServ;
+    height: 10px;
+    object-fit: auto;
+}
+
+
+    /* MAIN VIDEO */
+    .main_video {
+        grid-area: video;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        position: relative;
+    }
+
+    .main_video video {
+        width: inherit;
+    }
+
+    /* convocatoria */
+    .main_video_convocatoria {
+        grid-area: video;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100% ;
+        margin: 5% 0%;
+
+    }
+    .main_video_convocatoria h1 {
+        font-family: Roboto;
+        font-size: 6rem;
+        text-align: center;
+        margin: 3% 0%;
+        color: white;
+    }
+
+    .main_video_convocatoria h2 {
+        color: #000000;
+        font-size: 4rem;
+        text-align: center;
+        margin: 2% 0%;
+        font-family: Roboto;
+        color: white;
+    }
+
+    .boton {
+        background-color: yellow;
+        border-radius: 15%;
+        margin: 2% auto;
+        z-index: 1;
+        width: 30%;    
+    }
+
+    .boton a {
+        cursor: pointer;
+        display: block;
+        font-size: 5rem;
+        color: black;
+        text-decoration: none;
+    }
+    /* FIN VIDEO */ 
+
+    /* QUE OFRECEMOS */
+    .main_tituloSeccion_queOfrecemos {
+        grid-area: queofrecemos;
+        display: flex;
+        font-size: 4rem;
+        text-align: center;
+        font-family: Roboto;
+        margin:3%;
+    }
+
+    .main_tarjeta_titulo {
+        font-size: 1.5rem;
+        height: 50px;
+        margin: 5%;
+    }
+
+    .main_tarjeta_descripcion {
+        font-size: 1.3rem;
+        height: 60px;
+        padding: 1%;
+        margin-bottom: 10%;
+    }
+
+    .main_queOfrecemos1 img {
+        width: 50%;
+    }
+
+    .main_queOfrecemos1 {
+        grid-area: queofrecemos1;
+
+    }
+
+        .blanco {
+            width: 50%;
+            padding: 0% 25%;
+        }
+
+        .main_queOfrecemos h2 {
+            text-align: center;
+        }
+    .main_queOfrecemos2 {
+        grid-area: queofrecemos2;
+    }
+
+    .main_queOfrecemos3 {
+        grid-area: queofrecemos3;
+    }
+
+    .main_queOfrecemos4 {
+        grid-area: queofrecemos4;
+    }
+
+    .main_queOfrecemos5 {
+        grid-area: queofrecemos5;
+    }
+
+    /* SOBRE NOSOTROS */
+
+    .main_sobreNosotros {
+        grid-area: nos;
+        background-color: rgb(247, 240, 216);
+        padding: 10px;
+    }
+
+    .main_tituloSeccion_sobreNosotros {
+    display: flex;
+    font-size: 4rem;
+    text-align: center;
+    font-family: Roboto;
+    margin:3%;
+    }
+
+    .main_sobreNosotros_descripcion {
+        font-size: 1.5rem;
+        padding: 1%;
+    }
+
+    .main_tituloSeccion_valores {
+        grid-area: val;
+        display: flex;
+        font-size: 4rem;
+        text-align: center;
+        font-family: Roboto;
+        margin:3%;
+    }
+
+    .main_valores1 {
+        grid-area: val1;
+    }
+
+    .main_valores2 {
+        grid-area: val2;
+    }
+
+    .main_valores3 {
+        grid-area: val3;
+    }
+
+    .main_valores4 {
+        grid-area: val4;
+    }
+
+    .main_valores5 {
+        grid-area: val5;
+    }
+
+    /*  FORMATO SERVICIOS  */
+
+    .serv1 {
+        display: flex;
+        grid-area: serv1;
+    }
+
+    .serv1 ul {
+        display: flex;
+    }
+
+    .serv2 {
+        display: flex;
+        grid-area: serv2;
+    }
+    .serv3 {
+        display: flex;
+        grid-area: serv3;
+    }
+    .serv4 {
+        display: flex;
+        grid-area: serv4;
+    }
+
+    /* DISCLAIMER */
+    .main_disclaimer {
+        width: 100%;
+        background-color: rgb(247, 240, 216);
+        grid-area: disclaimer;
+
+    }
+
+    .main_disclaimer h1 {
+        text-align: center;
+        font-size: 2rem;
+        font-family: Roboto;
+        padding-top: 1%;
+    } 
+
+    .main_disclaimer p {
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: Roboto;
+        font-style: italic;
+        padding: 2%;
+        
+    }
+
+    /* FOOTER */
+    .footer {
+        grid-area: footer;
+        text-align: center;
+        font-size: 2rem;
+        font-family: Roboto;
+        font-style: italic;
+        padding: 1%;
+    }
+
+/* FORMATO SOBRE EL TIRO CON ARCO  */    
+    .main_beneficios {
+        grid-area: bene;
+        display: flex;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: Roboto;
+        font-style: italic;
+        padding: 2%;
+    }
+
+/*   FORMATO PREGUNTAS FRECUENTES   */    
+.pregunta1 {
+    grid-area: pregunta1;
+    display: flex;
+    
+}
+
+.rta1 {
+    display: flex;
+    grid-area: rta1;
+}
+
+.pregunta2 {
+    grid-area: pregunta2;
+    display: flex;
+}
+.rta2 {
+    display: flex;
+    grid-area: rta2;
+}
+
+.pregunta3 {
+    grid-area: pregunta3;
+    display: flex;
+}
+.rta3 {
+    display: flex;
+    grid-area: rta3;
+}
+
+.pregunta4 {
+    grid-area: pregunta4;
+    display: flex;
+}
+
+.rta4 {
+    display: flex;
+    grid-area: rta4;
+}
+
+.pregunta5 {
+    grid-area: pregunta5;
+    display: flex;
+}
+
+.rta5 {
+    display: flex;
+    grid-area: rta5;
+}
+
+    /* MEDIA QUERY PARA DISPOSITIVOS >1000px */
+
+@media only screen and (min-width: 1000px) {
+    /* FOR DESKTOP */    
+    .main_description {
+        font-size: 4rem;
+    }
+    .cuerpo {
+        display: grid;
+        background-color: #e3f2f8;
+        width: 100%%;
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+    }
+    .landing {    
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(10,auto);
+        grid-template-areas: 
+                "logo nav nav nav redes"
+                "title title title title title"
+                "video video video video video"
+                "queofrecemos queofrecemos queofrecemos queofrecemos queofrecemos"
+                "queofrecemos1 queofrecemos2 queofrecemos3 queofrecemos4 queofrecemos5"
+                "nos nos nos nos nos"
+                "val val val val val"
+                "val1 val2 val3 val4 val5"
+                "disclaimer disclaimer disclaimer disclaimer disclaimer"
+                "footer footer footer footer footer"                                     ;
+    }
+
+    .sobreeltiroconarco {
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas: 
+                "logo nav nav nav redes"
+                "title title title title title"
+                "desc desc desc desc desc"
+                "subtitle subtitle subtitle subtitle subtitle"
+                "bene bene bene bene bene"
+                "footer footer footer footer footer"             
+    }
+
+
+    .preguntas {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(15,auto);
+        grid-template-areas: 
+        "logo nav nav nav redes"
+        "title title title title title"
+        "desc desc desc desc desc"
+        "pregunta1 pregunta1 pregunta1 pregunta1 pregunta1"
+        "rta1 rta1 rta1 rta1 rta1"
+        "pregunta2 pregunta2 pregunta2 pregunta2 pregunta2"
+        "rta2 rta2 rta2 rta2 rta2"
+        "pregunta3 pregunta3 pregunta3 pregunta3 pregunta3"
+        "rta3 rta3 rta3 rta3 rta3"
+        "pregunta4 pregunta4 pregunta4 pregunta4 pregunta4"
+        "rta4 rta4 rta4 rta4 rta4"
+        "pregunta5 pregunta5 pregunta5 pregunta5 pregunta5"
+        "rta5 rta5 rta5 rta5 rta5"
+        "footer footer footer footer footer" 
+    }
+
+    .servicios {
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(8,auto);
+        grid-template-areas: 
+                "logo nav nav nav redes"
+                "title title title title title"
+                "desc desc desc desc desc"
+                "imgServ1 serv1 serv1 serv1 serv1"
+                "serv2 serv2 serv2 serv2 imgServ2"
+                "imgServ3 serv3 serv3 serv3 serv3"
+                "serv4 serv4 serv4 serv4 imgServ4"
+                "footer footer footer footer footer"             
+    }
+
+/* HEADER */
+.header_logo {
+            display: flex;
+            grid-area: logo;
+        }
+
+            .header_logo img {
+                object-fit: contain;
+                max-width: 100%;
+               
+            }
+
+        .header_barraNav {
+            display: flex;
+            grid-area: nav;
+
+        }
+
+            .header_barraNav div {
+                border: 1px;
+                border-radius: 5%;
+                border-style: groove;
+                border-color: lightseagreen;
+                margin: 2px;
+                padding: 1%;
+                background-color: lightskyblue;
+                width: 20%;
+                display: flex;
+                height: 50px;
+
+            }
+
+            .header_barraNav div:hover {
+                background-color: orange;
+                transform:scale(110%);
+                transition-duration: 0.4s;
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+
+            .header_barraNav div a {
+                font-family: Roboto;
+                color: black;
+                font-size: 2rem;
+                text-decoration: none;
+                cursor: pointer;
+                display:block;
+                text-align: center;
+                width: 100%;
+                height: 100%;
+            }
+
+        .header_redes {
+            display:flex;
+            grid-area: redes;
+            
+        }
+
+            .header_redes h2 {
+                text-align: center;
+                font-size: 1rem;
+                font-family: Roboto;
+
+            }
+            .header_redes_img {
+                padding: 5%;
+            }
+            .header_redes img:hover {
+                transform:scale(130%);
+                
+            }
+}
+
+@media only screen and (min-width:0px) and (max-width:999px) {
+  
+        .cuerpo {
+            display: grid;
+            background-color: rgb(208, 241, 247);
+            width: 100%;
+            grid-column-gap: 10px;
+            grid-row-gap: 20px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(19,auto);
+            grid-template-areas: 
+                    "logo redes"
+                    "nav nav"
+                    "title title"
+                    "video video"
+                    "queofrecemos queofrecemos"
+                    "queofrecemos1 queofrecemos1"
+                    "queofrecemos2 queofrecemos2"
+                    "queofrecemos3 queofrecemos3"
+                    "queofrecemos4 queofrecemos4"
+                    "queofrecemos5 queofrecemos5"
+                    "nos nos"
+                    "val val"
+                    "val1 val1"
+                    "val2 val2"
+                    "val3 val3"
+                    "val4 val4"
+                    "val5 val5"
+                    "disclaimer disclaimer"
+                    "footer footer" ;
+        }
+
+        .sobreeltiroconarco {
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(10,auto);
+            grid-template-areas: 
+            "logo redes"
+            "nav nav"
+            "title title"
+            "desc desc"
+            "subtitle subtitle"
+            "bene bene"
+            "footer footer" 
+            "pregunta1 pregunta1"
+            "pregunta2 pregunta2"
+            "pregunta3 pregunta3"
+            "pregunta4 pregunta4"
+            "pregunta5 pregunta5"
+            "footer footer"             
+        }
+
+        .preguntas {
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(15,auto);
+            grid-template-areas: 
+            "logo redes"
+            "nav nav"
+            "title title"
+            "desc desc"
+            "pregunta1 pregunta1"
+            "rta1 rta1"
+            "pregunta2 pregunta2"
+            "rta2 rta2"
+            "pregunta3 pregunta3"
+            "rta3 rta3"
+            "pregunta4 pregunta4"
+            "rta4 rta4"
+            "pregunta5 pregunta5"
+            "rta5 rta5"
+            "footer footer" 
+        }
+        .header_barraNav div a {
+            font-family: Roboto;
+            color: black;
+            font-size: 1.2rem;
+            text-decoration: none;
+            padding: 1%;
+            cursor: pointer;
+            display:block;
+            text-align: center;
+        }
+    
+        .main_video video {
+            width: inherit;
+        }
+    
+        .main_video_convocatoria h1 {
+            font-family: Roboto;
+            font-size: 3rem;
+            text-align: center;
+            margin: 3% 0%;
+            color: white;
+        }
+
+        .main_video_convocatoria h2 {
+
+            display: none;
+        }
+    
+        .boton {
+            background-color: yellow;
+            border-radius: 15%;
+            margin: 2% auto;
+            z-index: 1;
+            width: 50%;    
+            padding: 4%;
+        }
+
+        .boton a {
+            cursor: pointer;
+            display: block;
+            font-size: 1.5rem;
+            color: black;
+            text-decoration: none;
+        }
+
+        /* ------------------- QUE OFRECEMOS ---------------------------- */
+
+        .main_tituloSeccion_queOfrecemos {
+            grid-area: queofrecemos;
+            display: flex;
+            font-size: 4rem;
+            text-align: center;
+            font-family: Roboto;
+            margin:3%;
+            padding: 10%;
+        }
+
+        .main_tarjeta_titulo {
+            font-size: 2rem;
+            height: 20px;
+            margin: 1% 5%;
+        }
+
+        .main_tarjeta_descripcion {
+            font-size: 1.3rem;
+            height: auto;
+            padding: 1% 5%;
+            margin: 0%;
+        }
+        .main_tituloSeccion_queOfrecemos {
+            margin:0%;
+            padding: 0%;
+            font-style: oblique;
+            background-color: aquamarine;
+        }
+        .main_queOfrecemos1 {
+            grid-area: queofrecemos1;
+            margin:0%;
+
+        }
+
+            .blanco {
+                display: none;
+            }
+
+            .main_queOfrecemos h2 {
+                text-align: center;
+            }
+        .main_queOfrecemos2 {
+            grid-area: queofrecemos2;
+        }
+
+        .main_queOfrecemos3 {
+            grid-area: queofrecemos3;
+        }
+
+        .main_queOfrecemos4 {
+            grid-area: queofrecemos4;
+        }
+
+        .main_queOfrecemos5 {
+            grid-area: queofrecemos5;
+        }
+    }

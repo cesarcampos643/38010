@@ -75,7 +75,7 @@
     .header_barraNav div a {
         font-family: Roboto;
         color: blue;
-        font-size: 3rem;
+        font-size: 2rem;
         text-decoration: none;
         cursor: pointer;
         display:contents;
@@ -113,7 +113,7 @@
     margin:0%;
     background-image: url('../assets/img/backgroundimage.png');
     background-size: cover;
-    height: 350px;
+    height: 200px;
     display: flex;
 }
 
@@ -124,6 +124,7 @@
     flex-direction: column;
     width: 100%;
     margin: 2% 0%;
+    font-size: 5rem;
 }
 
 .main_description h2 {
@@ -140,18 +141,6 @@
     margin:0%;
 
 }
-
-.main_servicios_texto {
-    display:flex;
-
-}
-
-.main_servicios_imagen {
-    grid-area: imgServ;
-    height: 10px;
-    object-fit: auto;
-}
-
 
     /* MAIN VIDEO */
     .main_video {
@@ -221,16 +210,16 @@
         font-size: 4rem;
         text-align: center;
         font-family: Roboto;
-        margin:3%;
+        margin: 3% 0%;
     }
         .main_tarjeta_titulo {
-        font-size: 3rem;
+        font-size: 2rem;
         height: 50px;
-        margin: 5%;
+        margin: 5% 0%;
         }  
 
         .main_tarjeta_descripcion {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             height: 60px;
             padding: 1%;
             margin-bottom: 10%;
@@ -272,6 +261,7 @@
         .main_queOfrecemos5 {
             grid-area: queofrecemos5;
             margin-bottom: 5%;
+            margin-right: 5%;
         }
     /* --------------- FIN QUE OFRECEMOS    -------------------- */
 
@@ -302,7 +292,7 @@
         font-size: 4rem;
         text-align: center;
         font-family: Roboto;
-        margin:3%;
+        margin: 3%;
     }
 
     .main_valores1 {
@@ -340,14 +330,14 @@
 
     .main_disclaimer h1 {
         text-align: center;
-        font-size: 4rem;
+        font-size: 3rem;
         font-family: Roboto;
         padding-top: 1%;
     } 
 
     .main_disclaimer p {
         text-align: center;
-        font-size: 3rem;
+        font-size: 2rem;
         font-family: Roboto;
         font-style: italic;
         padding: 2%;
@@ -365,6 +355,24 @@
     }
 
 /* -------------------------------- FORMATO SERVICIOS--------------------------------  */
+.main_servicios_texto {
+    display:flex;
+    flex-direction: column;
+}
+
+.main_servicios_texto h1 {
+    font-size: 2.5rem;
+}
+
+.main_servicios_texto h2 {
+    font-size: 2rem ;
+}
+
+.main_servicios_imagen img {
+    grid-area: imgServ;
+    height: 50%;
+    width: 70%;
+}
 
     .imgServicios {
         display: flex;
@@ -373,10 +381,6 @@
     .serv1 {
         display: flex;
         grid-area: serv1;
-    }
-
-    .serv1 ul {
-        display: flex;
     }
 
     .serv2 {
@@ -524,7 +528,7 @@
 
 
     .landing {    
-        grid-template-columns: repeat(5,20%);
+        grid-template-columns: repeat(5,19%);
         grid-template-rows: repeat(10,auto);
         grid-template-areas: 
                 "logo nav nav nav redes"
@@ -540,7 +544,7 @@
     }
 
     .sobreeltiroconarco {
-        grid-template-columns: repeat(5,20%);
+        grid-template-columns: repeat(5,19%);
         grid-template-rows: repeat(6,auto);
         grid-template-areas: 
                 "logo nav nav nav redes"
@@ -553,7 +557,7 @@
 
 
     .preguntas {
-        grid-template-columns: repeat(5,20%);
+        grid-template-columns: repeat(5,19%);
         grid-template-rows: repeat(15,auto);
         grid-template-areas: 
         "logo nav nav nav redes"
@@ -573,7 +577,7 @@
     }
 
     .servicios {
-        grid-template-columns: repeat(5,20%);
+        grid-template-columns: repeat(5,19%);
         grid-template-rows: repeat(8,auto);
         grid-template-areas: 
                 "logo nav nav nav redes"
@@ -587,7 +591,7 @@
     }
 
     .galeria {
-        grid-template-columns: repeat(5,20%);
+        grid-template-columns: repeat(5,19%);
         grid-template-rows: repeat(8,auto);
         grid-template-areas: 
                 "logo nav nav nav redes"

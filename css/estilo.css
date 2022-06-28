@@ -11,6 +11,40 @@
     src:  url(Roboto-Regular.ttf);
 }
 
+/* ------------------------- ANIMACIONES-------------------------- */
+.animate {
+    animation-duration: 0.75s;
+    animation-delay: 0.5s;
+    animation-name: animate-fade;
+    animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+    animation-fill-mode: backwards;
+  }
+  
+  /* Fade In */
+  .animate.fade {
+    animation-name: animate-fade;
+    animation-timing-function: ease;
+  }
+  
+  @keyframes animate-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .delay-1 {
+    animation-delay: 0.6s;
+  }
+  .delay-2 {
+    animation-delay: 0.7s;
+  }
+  .delay-3 {
+    animation-delay: 0.8s;
+  }
+  .delay-4 {
+    animation-delay: 0.9s;
+  }
+  
+
 /* FORMATO LANDING */
 .divider {
     grid-area: divider;
@@ -239,6 +273,32 @@
                 width: 50%;
 
             }
+
+        .main_queOfrecemos1:hover #slide {
+                transition: 1s;
+                left: 0;
+        }
+        
+        #slide {
+            position: absolute;
+            left: -100px;
+            width: 100px;
+            height: 100px;
+            background: blue;
+            -webkit-animation: slide 0.5s forwards;
+            -webkit-animation-delay: 2s;
+            animation: slide 0.5s forwards;
+            animation-delay: 2s;
+        }
+        
+        @-webkit-keyframes slide {
+            100% { left: 0; }
+        }
+        
+        @keyframes slide {
+            100% { left: 0; }
+        }
+        
 
             .main_queOfrecemos h2 {
                 text-align: center;

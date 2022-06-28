@@ -62,7 +62,7 @@
 .cuerpo {
     display: grid;
     background-color: #e3f2f8;
-    width: 100%%;
+    width: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 20px;
 }
@@ -157,18 +157,19 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 2% 0%;
-    font-size: 5rem;
+    padding: 2%;
+    font-size: 2.5rem;
 }
 
 .main_description h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 .main_subtitle {
     grid-area: subtitle;
     display: flex;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     text-shadow: 0px 0px 7px yellow;
     font-family: Roboto;
@@ -461,16 +462,17 @@
         grid-area: bene;
         display: flex;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: Roboto;
         font-style: italic;
         padding: 2%;
+        line-height: 30px;
     }
 
 /* --------------------------------  FORMATO PREGUNTAS FRECUENTES  -------------------------------- */   
 
 .main_respuesta {
-    font-size: 4rem;
+    font-size: 2rem;
     margin: 1% 3%;
 }
 .pregunta1 {
@@ -587,7 +589,7 @@
 
 
     .landing {    
-        grid-template-columns: repeat(5,19%);
+        grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(10,auto);
         grid-template-areas: 
                 "logo nav nav nav redes"
@@ -603,7 +605,7 @@
     }
 
     .sobreeltiroconarco {
-        grid-template-columns: repeat(5,19%);
+        grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(6,auto);
         grid-template-areas: 
                 "logo nav nav nav redes"
@@ -616,7 +618,7 @@
 
 
     .preguntas {
-        grid-template-columns: repeat(5,19%);
+        grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(15,auto);
         grid-template-areas: 
         "logo nav nav nav redes"
@@ -636,7 +638,7 @@
     }
 
     .servicios {
-        grid-template-columns: repeat(5,19%);
+        grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(8,auto);
         grid-template-areas: 
                 "logo nav nav nav redes"
@@ -650,7 +652,7 @@
     }
 
     .galeria {
-        grid-template-columns: repeat(5,19%);
+        grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(8,auto);
         grid-template-areas: 
                 "logo nav nav nav redes"
@@ -702,7 +704,6 @@
             "desc desc"
             "subtitle subtitle"
             "bene bene"
-            "footer footer" 
             "pregunta1 pregunta1"
             "pregunta2 pregunta2"
             "pregunta3 pregunta3"
@@ -731,6 +732,45 @@
             "rta5 rta5"
             "footer footer" 
         }
+
+        .servicios {
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(10,auto);
+            grid-template-areas: 
+            "logo redes"
+            "nav nav"
+            "title title"
+            "desc desc"
+            "serv1 serv1"
+            "serv2 serv2"
+            "serv3 serv3"
+            "serv4 serv4"
+            "serv5 serv5"
+            "footer footer" 
+        }
+ 
+        .galeria {
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(10,auto);
+            grid-template-areas: 
+            "logo redes"
+            "nav nav"
+            "title title"
+            "desc desc"
+            "gal1 gal2"
+            "gal3 gal4"
+            "gal5 gal6"
+            "gal7 gal8"
+            "gal9 gal10"
+            "gal11 gal12"
+            "gal13 gal14"
+            "footer footer" 
+        }
+
+        .main_servicios_imagen img {
+            display: none;
+        }
+
         .header_barraNav div a {
             font-family: Roboto;
             color: black;
@@ -742,6 +782,10 @@
             text-align: center;
         }
     
+        .main_title {
+            font-size: 5rem;
+        }
+
         .main_video video {
             width: inherit;
         }

@@ -106,7 +106,7 @@
 
 .main_title {
     grid-area: title;
-    font-size: 13rem;
+    font-size: 8rem;
     text-align: center;
     text-shadow: 0px 0px 7px yellow;
     font-family: Roboto;

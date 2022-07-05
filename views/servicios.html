@@ -1,108 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Total Archery</title>
-	<link rel="stylesheet" href="../css/estilo.css">
-	<link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title> Total Archery </title>
 </head>
-<body class="cuerpo servicios general_center">
-    <!--INICIO ENCABEZADO-->
+<body class="container-fluid justify-content-center">
+    <!-- INICIO HEADER -->
+    <header class="container-fluid general_center">
+        <div class="row general_center">
+            
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/img/logo.png" alt="" width="200" height="auto" class="d-inline-block align-text-top">
+                    </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="../index.html"> Inicio </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="views/servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="views/sobreeltiroconarco.html">Sobre el Tiro con Arco</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="views/galeria.html">Galería</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="views/preguntas.html">Preguntas Frecuentes</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
 
-        <!-- LOGO encabezado -->
-            <div class="header_logo">
-                <img src="../assets/img/logo.png" alt="logo">
-            </div>
-        <!-- CIERRE LOGO -->
-        <!-- INICIO NAV -->
-            <nav class="header_barraNav general_center">
-                <!-- lista con viñetas -->
-                <div class="general_center">
-                    <a href="../index.html">Inicio</a>
-                </div>
-                <div class="general_center">
-                    <a href="servicios.html">Servicios</a>
-                </div>
-                <div class="general_center">
-                    <a href="sobreeltiroconarco.html">Sobre el Tiro con Arco</a>
-                </div>
-                <div class="general_center">
-                    <a href="galeria.html">Galería</a>
-                </div>
-                <div class="general_center">
-                    <a href="preguntas.html">Preguntas Frecuentes</a>
-                </div>
-            </nav>	
-        <!-- CIERRE NAV -->
-        <!-- INICIO REDES NAV -->
-            <div class="header_redes general_center">
-                <div>
-                    <h2>¡Seguinos en las redes!</h2>
-                </div>
-                <div class="header_redes_img">
-                    <a href="http://www.instagram.com/TotalArcheryBA"><img src="../assets/img/ig_icon.jpg" alt="logo ig"></a>				
-                </div>
-                <div class="header_redes_img">
-                    <a href="http://www.facebook.com/TotalArcheryBA"><img src="../assets/img/fb_icon.jpg" alt="logo fb"> </a>
-                </div>
-            </div>    
-        <!-- CIERRE REDES NAV -->
-
-	<!-- CIERRE ENCABEZADO -->
+        </div>
 
     <!-- inicio contenido -->
-
-        <h1 class="main_title general_center"> Servicios </h1>
-		<section class="main_description">
-			<h2> Te contamos cómo es nuestro recorrido de aprendizaje y trabajo en las clases </h2>
-			<img class="imgServicios" src="../assets/img/recorrido.png" alt="recorrido de aprendizaje">
-			<h2> Nuestro recorrido de enseñanza está focalizado en construir una buena base técnica desde la primera clase y mejorar el manejo corporal para adquirir la percepción fina y la precisión que requiere un tiro de alto nivel </h3>
-		</section>
-		<!-- SECCION NUESTROS SERVICIOS -->
-		
-			<div class="main_servicios_imagen imgServ1">
-				<img src="../assets/img/logoColorido.png" alt="Paso 1">
+    <div class="row container-fluid general_center">
+        <h1 class="main_title general_center text-center"> Servicios </h1>
+    </div>    
+    <div class="row container-fluid general_center text-center">
+        <h2> Te contamos cómo es nuestro recorrido de aprendizaje y trabajo en las clases </h2>
+        <img class="imgServicios" src="../assets/img/recorrido.png" alt="recorrido de aprendizaje">
+		<h2> Nuestro recorrido de enseñanza está focalizado en construir una buena base técnica desde la primera clase y mejorar el manejo corporal para adquirir la percepción fina y la precisión que requiere un tiro de alto nivel </h3>
+   
+    <div class="row container-fluid general_center my-4 fondo_servicios">
+			<div class="main_servicios_imagen col-md-4 col-lg-2 my-auto">
+				<img class="img-fluid d-none d-lg-block" src="../assets/img/logoColorido.png" alt="Paso 1">
 			</div>
-			<div class="main_servicios_texto serv1 general_center">
-				<h1>Clase Inicial</h1>
+			<div class="main_servicios_texto general_center col-xs-12 col-md-8 col-lg-10">
+				<h2>Clase Inicial</h2>
 				<br>
-				<h2>Pensadas para probar la actividad y conocer la experiencia de disparar flechas. ¡¡Ideal para venir con amigos!! Se trabaja la seguridad en el manejo del equipo, se ven los elementos básicos del ciclo de tiro y se tiene la primera experiencia de tirar con arco y flecha</h2>
+				<h3>Pensadas para probar la actividad y conocer la experiencia de disparar flechas. ¡¡Ideal para venir con amigos!! Se trabaja la seguridad en el manejo del equipo, se ven los elementos básicos del ciclo de tiro y se tiene la primera experiencia de tirar con arco y flecha</h3>
 			</div>
-		
-		
-			<div class="main_servicios_texto serv2 general_center">
-				<h1>Niveles de iniciación</h1>
-				<br>
-				<h2>¿Querés aprender a tirar con precisión y mejorar lo que podés hacer con el arco? Los niveles de iniciación te dan los conocimientos teórico-prácticos que hacen que el tiro se vaya desarrollando de forma natural y simple para cada vez ir tirando mejor hasta llegar a las distancias más lejanas. Se trabaja sobre el conocimiento corporal y postural para mejorar aspectos técnicos, aspectos mentales, de equipo y se puede complementar con entrenamiento físico</h2>
-			</div>
-			<div class="main_servicios_imagen imgServ2">
-					<img src="../assets/img/logoColorido.png" alt="Paso 1">
-			</div>				
-		
-        
-				<div class="main_servicios_imagen imgServ3">
-					<img src="../assets/img/logoColorido.png" alt="Paso 1">
-				</div>				
-				<div class="main_servicios_texto serv3 general_center">
-					<h1>Perfeccionamiento Técnico</h1>
-					<br>
-					<h2>Para personas que hayan superado los niveles de iniciación, cada tirador tiene su plan de entrenamiento para potenciar el desarrollo de su tiro. En el caso de gente que haya iniciado su experiencia de tiro en otro club, se analiza el gesto deportivo automatizado y se acuerda un plan de trabajo para incorporar los elementos que sean necesarios (en el caso de que venga de clubes que no tengan una metodología formalizada o trabajo técnico explícito) y se trabaja de forma similar a los avanzados. Según el nivel de la persona, puede sumarse a los niveles de iniciación técnica </h3>
-				</div>
-		
-		
-				<div class="main_servicios_texto serv4 general_center">
-					<h1>Eventos Recreativos y Empresariales</h1>
-					<br>
-					<h2>Sumá el tiro con arco a cumpleaños, ferias, convenciones y casi cualquier evento que organices. ¡Hacelo diferente! Hemos realizado eventos de hasta 40 personas</h2>
-				</div>
-				<div class="main_servicios_imagen imgServ4">
-					<img src="../assets/img/logoColorido.png" alt="Paso 1">
-				</div>				
-		
+    </div>
+    <div class="row container-fluid general_center mb-4" >
+        <div class="main_servicios_texto general_center col-xs-12 col-md-8 col-lg-10">
+            <h2>Niveles de iniciación</h2>
+            <br>
+            <h3>¿Querés aprender a tirar con precisión y mejorar lo que podés hacer con el arco? Los niveles de iniciación te dan los conocimientos teórico-prácticos que hacen que el tiro se vaya desarrollando de forma natural y simple para cada vez ir tirando mejor hasta llegar a las distancias más lejanas. Se trabaja sobre el conocimiento corporal y postural para mejorar aspectos técnicos, aspectos mentales, de equipo y se puede complementar con entrenamiento físico</h3>
+        </div>
+        <div class="main_servicios_imagen col-md-4 col-lg-2 my-auto">
+                <img  class="img-fluid d-none d-lg-block" src="../assets/img/logoColorido.png" alt="Paso 1">
+        </div>	
+    </div>    
+    <div class="row container-fluid  general_center mb-4 ">
+        <div class="main_servicios_imagen col-md-4 col-lg-2 my-auto">
+            <img  class="img-fluid d-none d-lg-block" src="../assets/img/logoColorido.png" alt="Paso 1">
+        </div>				
+        <div class="main_servicios_texto  general_center col-xs-12 col-md-8 col-lg-10">
+            <h2>Perfeccionamiento Técnico</h2>
+            <br>
+            <h3>Para personas que hayan superado los niveles de iniciación, cada tirador tiene su plan de entrenamiento para potenciar el desarrollo de su tiro. En el caso de gente que haya iniciado su experiencia de tiro en otro club, se analiza el gesto deportivo automatizado y se acuerda un plan de trabajo para incorporar los elementos que sean necesarios (en el caso de que venga de clubes que no tengan una metodología formalizada o trabajo técnico explícito) y se trabaja de forma similar a los avanzados. Según el nivel de la persona, puede sumarse a los niveles de iniciación técnica </h3>
+        </div>
+    </div> 			
+    <div class="row container-fluid general_center mb-4">
+        <div class="main_servicios_texto general_center col-xs-12 col-md-8 col-lg-10">
+            <h2> Eventos Competitivos y Lúdicos</h2>
+            <br>
+            <h3>¿Qué mejor que poder aplicar lo aprendido? Ya sea en torneos internos o en otros clubes o en reuniones lúdicas con un foco social, organizamos eventos para que podamos aplicar lo que venimos aprendiendo </h3>
+        </div>
+        <div class="main_servicios_imagen col-md-4 col-lg-2 my-auto">
+            <img class="img-fluid d-none d-lg-block" src="../assets/img/logoColorido.png" alt="Paso 1">
+        </div>				
 
-    <footer class="footer">
-        -- Total Archery 2022 v2.5 - 
+    </div> 		
+    <div class="row container-fluid general_center mb-4 ">
+        <div class="main_servicios_imagen col-md-4 col-lg-2 my-auto">
+            <img class="img-fluid d-none d-lg-block" src="../assets/img/logoColorido.png" alt="Paso 1">
+        </div>				
+        <div class="main_servicios_texto general_center col-xs-12 col-md-8 col-lg-10">
+            <h2> Eventos Grupales Empresariales y Personales </h2>
+            <br>
+            <h3> Cumpleaños, Actividades entre amigos, salidas empresariales, eventos en quintas o salones. Hemos realizado la actividad en diversos ámbitos y podemos organizar un evento con foco social, recreativo o de aprendizaje (trabajo en equipo, camaradería, etc.) </h3>
+        </div>
+    </div> 	
+    <footer class="container-fluid mb-2">
+        <div class="landing_redes row container-fluid general_center">
+            <h4 class="col-xs-5 col-md-5 col-lg-7">-- Total Archery 2022 v2.5 -- </h4>
+            <h4 class="col-xs-3 col-md-3 col-lg-3">¡Seguinos en las redes!</h4>
+            <a class="col-xs-2 col-md-2 col-lg-1 justify-content-end" href="http://www.instagram.com/TotalArcheryBA"><img class="img-fluid" src="../assets/img/ig_icon.jpg" alt="logo ig"></a>				
+            <a class="col-xs-2 col-md-2 col-lg-1 justify-content-end" href="http://www.facebook.com/TotalArcheryBA"><img class="img-fluid" src="../assets/img/fb_icon.jpg" alt="logo fb"> </a>
+            
+        </div>
     </footer>
-
-</body>
+    <!-- CIERRE FOOTER -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>

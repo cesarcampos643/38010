@@ -12,28 +12,32 @@
     <!-- INICIO HEADER -->
     <header class="container-fluid general_center">
         <div class="row general_center">
-            <div class="container-fluid header_logo col-xs-6 col-md-2 col-lg-2 general_center">
-                <img class="img-rounded img-fluid" src="assets/img/logo.png" alt="Logo Total Archery">
-            </div>
-            <nav class="navbar navbar-expand col-xs-6 col-md-2 col-lg-10" role="navigation">
-                <div class="container">
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barraNav">
-                                  <span class="sr-only">Toggle navigation</span>
-                                  <span class="icon-bar"></span>
-                                  <span class="icon-bar"></span>
-                                  <span class="icon-bar"></span>
-                              </button>
-                  </div>
-              
-                  <!-- Collect the nav links, forms, and other content for toggling -->
-                  <div class="collapse navbar-collapse" id="barraNav">
-                    <ul class="nav navbar-nav">
-                      <li><a href="index.php">Inicio</a></li>
-                      <li><a href="about.php">Servicios</a></li>
-                      <li><a href="#portfolio">Sobre el Tiro con Arco</a></li>
-                      <li><a href="#">Preguntas Frecuentes</a></li>
-                      <li><a href="contact.php">Galería</a></li>
+            
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/logo.png" alt="" width="200" height="auto" class="d-inline-block align-text-top">
+                    </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"> Inicio </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="views/servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="views/sobreeltiroconarco.html">Sobre el Tiro con Arco</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="views/galeria.html">Galería</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="views/preguntas.html">Preguntas Frecuentes</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -46,7 +50,7 @@
     <main class="container-fluid">
         <!-- INICIO TITULO -->
         <div class="row col-xs-12 general_center">
-            <h1 class="main_title "> Club de Arquería en Buenos Aires </h1>
+            <h1 class="main_title general_center text-wrap"> Club de Arquería en Buenos Aires </h1>
         </div>
         <!-- FIN TITULO -->
         <!-- INICIO VIDEO -->
@@ -55,46 +59,46 @@
                 <source src="assets/video1.mp4" type="video/mp4" frameborder="1">
             </video>
             <!-- texto sobre video --> 
-            <section class="main_video_convocatoria row">
-                <h1 class="prueba">VENÍ A CONOCER EL TIRO CON ARCO</h1>
-                <H2>Desafiate y descubrí una actividad única</H2>
-                <h2>**CONCENTRACIÓN - RELAJACIÓN - MANEJO DE LA POSTURA**</h2>
+            <section class="main_video_convocatoria row container-fluid">
+                <h1 class="d-none d-lg-block ">VENÍ A CONOCER EL TIRO CON ARCO</h1>
+                <H2 class="">Desafiate y descubrí una actividad única</H2>
+                <h2 class="d-none d-lg-block">**CONCENTRACIÓN - RELAJACIÓN - MANEJO DE LA POSTURA**</h2>
                 
                 <!-- boton reserva -->
-                <button  href="#BotonReserva"> 
+                <button class="boton d-none d-lg-block" href="#BotonReserva"> 
                     <a href="#BotonReserva"> Reservá tu clase inicial </a>
                 </button>
             </section>
         </div>
     <!-- FIN VIDEO -->
     <!-- INICIO QUE OFRECEMOS -->
-        <div class="row">
+        <div class="row container-fluid">
             <h2 class="main_tituloSeccion_queOfrecemos general_center"> QUÉ OFRECEMOS </h2>
         </div>
-        <div class="row justify-content-evenly general_center mb-5 pb-5">
+        <div class="row container-fluid justify-content-evenly general_center ">
             <div class="main_queOfrecemos1 col-xs-12 col-md-5 col-lg-2 general_center ">
-                <img class="blanco general_center" src="../assets/img/blanco.png" alt="imagen blanco">
+                <img class="blanco general_center d-none d-lg-block" src="../assets/img/blanco.png" alt="imagen blanco">
                 <h2 class="main_tarjeta_titulo"> CLASE INICIAL </h2>
                 <h3 class="main_tarjeta_descripcion"> Pensadas para quienes quieren probar la actividad o venir a pasarla bien con amigos. </h3>
             </div>
             <div class="main_queOfrecemos2 col-xs-12 col-md-5 col-lg-2">
-                <img class="blanco" src="../assets/img/blanco.png" alt="imagen blanco">
+                <img class="blanco d-none d-lg-block" src="../assets/img/blanco.png" alt="imagen blanco">
                 <h2 class="main_tarjeta_titulo"> NIVELES DE INICIACIÓN </h2>
                 <h3 class="main_tarjeta_descripcion"> Quienes ya saben que quieren aprender con mayor profundidad, ganar precisión, concentración, dominar mayor distancia.
             </div>
             <div class="main_queOfrecemos3 col-xs-12 col-md-5 col-lg-2">
-                <img class="blanco"  src="../assets/img/blanco.png" alt="imagen blanco">
+                <img class="blanco d-none d-lg-block"  src="../assets/img/blanco.png" alt="imagen blanco">
                 <h3 class="main_tarjeta_titulo"> PERFECCIONAMIENTO TÉCNICO </h3>
                 <h4 class="main_tarjeta_descripcion"> Los tiradores avanzados trabajan con objetivos técnicos y de desempeño para potenciar el aprendizaje. </h4>
             </div>
             <div class="main_queOfrecemos4 col-xs-12 col-md-5 col-lg-2">
-                <img  class="blanco" src="../assets/img/blanco.png" alt="imagen blanco">
+                <img  class="blanco d-none d-lg-block" src="../assets/img/blanco.png" alt="imagen blanco">
                 <h2 class="main_tarjeta_titulo"> EVENTOS CORPORATIVOS </h2>
                 <h3 class="main_tarjeta_descripcion"> Hacemos eventos formales (empresas y otras instituciones) e informales (grupos de amigos, cumpleaños) para que puedan disfrutar de una actividad diferente. </h3>
             </div>  
             <div class="main_queOfrecemos5 col-xs-12 col-md-5 col-lg-2">
-                <img class="blanco"  src="../assets/img/blanco.png" alt="imagen blanco">
-                <h2 class="main_tarjeta_titulo"> TORNEOS Y ENCUENTROS LÚDICOS </h2>
+                <img class="blanco d-none d-lg-block"z  src="../assets/img/blanco.png" alt="imagen blanco">
+                <h2 class="main_tarjeta_titulo mb-4"> TORNEOS Y ENCUENTROS LÚDICOS </h2>
                 <h3 class="main_tarjeta_descripcion"> Ya sea en nuestro club o en otros, poder aplicar lo aprendido en competencia o en encuentros sociales es muy desafiante </h3>
             </div>   
         </div>    
@@ -111,32 +115,32 @@
         <!-- FIN SOBRE NOSOTROS --> 
 
         <!-- INICIO VALORES -->
-        <div class="row">
-        <h2 class="main_tituloSeccion_valores row  general_center"> NUESTROS VALORES </h2>
+        <div class="row container-fluid">
+        <h2 class="main_tituloSeccion_valores row container-fluid general_center"> NUESTROS VALORES </h2>
         </div>
-        <div class="row justify-content-evenly general_center mb-5 pb-5">
+        <div class="row justify-content-evenly general_center">
             <div class="main_valores1 col-xs-12 col-md-5 col-lg-2">
-                <img class="blanco" src="../assets/img/calidad.jpg" alt="imagen blanco">
+                <img class="blanco d-none d-lg-block" src="../assets/img/calidad.jpg" alt="imagen blanco">
                 <h2 class="main_tarjeta_titulo col_xs-8"> CALIDAD </h2>
                 <h3 class="main_tarjeta_descripcion"> Nos gusta hacer las cosas bien y planificamos para lograr ofrecer servicios de calidad. </h3>
             </div>
             <div class="main_valores2 col-xs-12 col-md-5 col-lg-2">
-                <img class="blanco" src="../assets/img/camaraderia.jpg" alt="imagen blanco">
+                <img class="blanco d-none d-lg-block" src="../assets/img/camaraderia.jpg" alt="imagen blanco">
                 <h2 class="main_tarjeta_titulo col-xs-8"> CAMARADERÍA </h2>
                 <h3 class="main_tarjeta_descripcion col-xs-12"> Queremos que seas parte. Que disfrutes de compartir y poder encontrar un lugar para estar con otros. </h3>
             </div>
             <div class="main_valores3 col-xs-12 col-md-5 col-lg-2">
-                <img class="blanco"  src="../assets/img/ambiente.png" alt="imagen blanco">
+                <img class="blanco d-none d-lg-block"  src="../assets/img/ambiente.png" alt="imagen blanco">
                 <h2 class="main_tarjeta_titulo"> AMBIENTE </h2>
                 <h3 class="main_tarjeta_descripcion"> Queremos que crezcan como arqueros, como personas, que disfruten de la actividad y la pasen bien. </h3>
             </div>
             <div class="main_valores4 col-xs-12 col-md-5 col-lg-2 ">
-                <img  class="blanco" src="../assets/img/aprendizaje.jpg" alt="imagen blanco">
+                <img  class="blanco d-none d-lg-block" src="../assets/img/aprendizaje.jpg" alt="imagen blanco">
                 <h2 class="main_tarjeta_titulo"> APRENDIZAJE </h2>
                 <h3 class="main_tarjeta_descripcion"> Los contenidos están organizados para que el aprendizaje sea progresivo y ameno para todos. </h3>
             </div>  
             <div class="main_valores5 col-xs-12 col-md-5 col-lg-2">
-                <img class="blanco"  src="../assets/img/profesionalismo.png" alt="imagen blanco">
+                <img class="blanco d-none d-lg-block"  src="../assets/img/profesionalismo.png" alt="imagen blanco">
                 <h2 class="main_tarjeta_titulo"> PROFESIONALISMO </h2>
                 <h3 class="main_tarjeta_descripcion"> Seguimos los lineamientos de enseñanza de World Archery y los adaptamos a las expectativas de cada tirador. </h3>
             </div> 

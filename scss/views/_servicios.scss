@@ -1,0 +1,38 @@
+/* -------------------------------- FORMATO SERVICIOS--------------------------------  */
+.main_servicios_texto {
+    display:flex;
+    flex-direction: column;
+    padding: 1% 5%;
+
+    h2 {
+        padding: 2% 0%;
+    }
+}
+
+.main_servicios_imagen img {
+    grid-area: imgServ;
+    height: 50%;
+    width: 70%;
+}
+
+.imgServicios {
+    display: flex;
+    object-fit: contain;
+}
+.serv1 {
+    display: flex;
+    grid-area: serv1;
+}
+
+.serv2 {
+    display: flex;
+    grid-area: serv2;
+}
+.serv3 {
+    display: flex;
+    grid-area: serv3;
+}
+.serv4 {
+    display: flex;
+    grid-area: serv4;
+}

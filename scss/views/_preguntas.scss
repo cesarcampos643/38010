@@ -1,0 +1,54 @@
+/* --------------------------------  FORMATO PREGUNTAS FRECUENTES  -------------------------------- */   
+
+.main_respuesta {
+    font-size: 2rem;
+    margin: 1% 3%;
+}
+.pregunta1 {
+    grid-area: pregunta1;
+    display: flex;
+    
+}
+
+.rta1 {
+    display: flex;
+    grid-area: rta1;
+}
+
+.pregunta2 {
+    grid-area: pregunta2;
+    display: flex;
+}
+.rta2 {
+    display: flex;
+    grid-area: rta2;
+}
+
+.pregunta3 {
+    grid-area: pregunta3;
+    display: flex;
+}
+.rta3 {
+    display: flex;
+    grid-area: rta3;
+}
+
+.pregunta4 {
+    grid-area: pregunta4;
+    display: flex;
+}
+
+.rta4 {
+    display: flex;
+    grid-area: rta4;
+}
+
+.pregunta5 {
+    grid-area: pregunta5;
+    display: flex;
+}
+
+.rta5 {
+    display: flex;
+    grid-area: rta5;
+}

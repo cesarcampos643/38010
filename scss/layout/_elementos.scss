@@ -1,0 +1,139 @@
+.divider {
+    grid-area: divider;
+    border-color: black;
+    border-width: 2px;
+}
+
+.general_center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: center;
+}
+
+/* --------- HEADER ------------- */
+
+.header_logo {
+    display: flex;
+    grid-area: logo;
+    padding: 5%;
+
+    img {
+        object-fit: contain;
+        max-width: 100%;
+    }
+}
+
+.header_barraNav {
+    display: flex;
+    grid-area: nav;
+
+    div {
+        border: 1px;
+        border-radius: 5%;
+        border-style: groove;
+        border-color: lightseagreen;
+        margin: auto 2px;
+        padding: auto;
+        background-color: lightskyblue;
+        width: 20%;
+        display: flex;
+        height: 60px;
+
+        &:hover {
+            background-color: orange;
+            transform:scale(110%);
+            transition-duration: 0.4s;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+        a {
+            font-family: Roboto;
+            color: blue;
+            font-size: 2rem;
+            text-decoration: none;
+            display: block;
+            cursor: pointer;
+            padding: auto;
+           
+            
+        }
+    }
+
+}
+
+.header_redes {
+    display:flex;
+    grid-area: redes;
+    padding: 5%;
+    
+    h4 {
+        text-align: center;
+        font-family: Roboto;
+    }
+}
+
+.header_redes_img {
+    padding: 5%;
+}
+
+/* --------- CUERPO ------------ */
+
+.cuerpo {
+    display: grid;
+    background-color: #e3f2f8;
+    width: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+/* INICIO MAIN */
+
+.main_title {
+    grid-area: title;
+    font-size: 8rem;
+    text-align: center;
+    text-shadow: 0px 0px 7px yellow;
+    font-family: Roboto;
+    margin:0%;
+    background-image: url('../assets/img/backgroundimage.png');
+    background-size: cover;
+    height: 200px;
+    display: flex;
+}
+
+.main_description {
+    grid-area: desc;
+    color: #777777;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2%;
+    font-size: 2.5rem;
+
+    h2 {
+        text-align: center;
+        padding: 2%;
+    }
+}
+
+.main_subtitle {
+    grid-area: subtitle;
+    display: flex;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 0px 0px 7px yellow;
+    font-family: Roboto;
+    margin:0%;
+
+}
+
+/* FOOTER */
+.footer {
+    @extend h4;
+    grid-area: footer;
+    text-align: center;
+    font-family: Roboto;
+    font-style: italic;
+    padding: 1%;
+}

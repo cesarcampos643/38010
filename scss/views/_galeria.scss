@@ -1,0 +1,57 @@
+/*--------------------------------FORMATO GALERIA--------------------------------*/
+.main_galeria {
+    display: contents;
+}
+
+.main_galeria div img {
+    width: 100%;
+    display: flex;
+    max-height: 300px;
+
+}
+.main_galeria_tarjeta1 {
+    grid-area: gal1;
+    display: flex;
+}
+.main_galeria_tarjeta2 {
+    grid-area: gal2;
+    display: flex;
+}
+.main_galeria_tarjeta3 {
+    grid-area: gal3;
+}
+.main_galeria_tarjeta4 {
+    grid-area: gal4;
+}
+.main_galeria_tarjeta5 {
+    grid-area: gal5;
+}
+.main_galeria_tarjeta6 {
+    grid-area: gal6;
+}
+.main_galeria_tarjeta7 {
+    grid-area: gal7;
+}
+.main_galeria_tarjeta8 {
+    grid-area: gal8;
+}
+.main_galeria_tarjeta9 {
+    grid-area: gal9;
+}
+.main_galeria_tarjeta10 {
+    grid-area: gal10;
+}
+.main_galeria_tarjeta11 {
+    grid-area: gal11;
+}
+.main_galeria_tarjeta12 {
+    grid-area: gal12;
+}
+
+.main_galeria_tarjeta13 {
+    grid-area: gal13;
+}
+
+.main_galeria_tarjeta14 {
+    grid-area: gal14;
+}

@@ -1,0 +1,210 @@
+/* MAIN VIDEO */
+.main_video {
+    grid-area: video;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    position: relative;
+
+    video {
+        width: inherit;
+    }
+}
+
+/* --------- convocatoria ----------------- */
+ .main_video_convocatoria {
+    grid-area: video;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100% ;
+    margin: 5% 0%;
+
+        h1 {
+            font-family: Roboto;
+            font-size: 6rem;
+            text-align: center;
+            margin: 3% 0%;
+            color: white;
+        }
+
+        h2 {
+            color: #000000;
+            font-size: 4rem;
+            text-align: center;
+            margin: 2% 0%;
+            font-family: Roboto;
+            color: white;
+        }
+}
+
+.boton {
+    background-color: yellow;
+    border-radius: 15%;
+    margin: 2% auto;
+    z-index: 1;
+    width: 30%;    
+        
+    a {
+            cursor: pointer;
+            display: block;
+            font-size: 4rem;
+            color: black;
+            text-decoration: none;
+    }
+}   
+
+/* -------------- FIN VIDEO -------------- */ 
+
+/* ------- QUE OFRECEMOS ------------- */
+
+.main_tituloSeccion_queOfrecemos {
+    @extend h2;
+    grid-area: queofrecemos;
+    text-align: center;
+    font-family: Roboto;
+}
+
+.blanco {
+    width: 50%;
+}
+
+.main_tarjeta_titulo {
+    @extend h3;
+    height: 50px;
+    margin: 5% 0%;
+}  
+
+.main_tarjeta_descripcion {
+    @extend h4;
+    height: 60px;
+    padding: 1%;
+    margin-bottom: 10%;
+}
+
+.main_queOfrecemos1 {
+    grid-area: queofrecemos1;
+
+
+        &:hover #slide {
+            transition: 1s;
+            left: 0;
+    }
+    
+    #slide {
+        position: absolute;
+        left: -100px;
+        width: 100px;
+        height: 100px;
+        background: blue;
+        -webkit-animation: slide 0.5s forwards;
+        -webkit-animation-delay: 2s;
+        animation: slide 0.5s forwards;
+        animation-delay: 2s;
+    }
+    
+    @-webkit-keyframes slide {
+        100% { left: 0; }
+    }
+    
+    @keyframes slide {
+        100% { left: 0; }
+    }
+}
+
+.main_queOfrecemos2 {
+    grid-area: queofrecemos2;
+
+}
+
+.main_queOfrecemos3 {
+    grid-area: queofrecemos3;
+}
+
+.main_queOfrecemos4 {
+    grid-area: queofrecemos4;
+}
+
+.main_queOfrecemos5 {
+    grid-area: queofrecemos5;
+}
+
+/* --------------- FIN QUE OFRECEMOS    -------------------- */
+
+/* -------------- SOBRE NOSOTROS ------------ */
+
+.main_sobreNosotros {
+    grid-area: nos;
+    background-color: rgb(247, 240, 216);
+    padding: 2% 0%;
+}
+
+.main_tituloSeccion_sobreNosotros {
+display: flex;
+font-size: 4rem;
+text-align: center;
+font-family: Roboto;
+margin-bottom: 2%;
+}
+
+.main_sobreNosotros_descripcion {
+    font-size:2rem;
+}
+
+.main_tituloSeccion_valores {
+    grid-area: val;
+    display: flex;
+    font-size: 4rem;
+    text-align: center;
+    font-family: Roboto;
+    padding: 2%;
+}
+
+.main_valores1 {
+    grid-area: val1;
+}
+
+.main_valores2 {
+    grid-area: val2;
+    
+}
+
+.main_valores3 {
+    grid-area: val3;
+    
+}
+
+.main_valores4 {
+    grid-area: val4;
+}
+
+.main_valores5 {
+    grid-area: val5;
+}
+
+
+/* DISCLAIMER */
+.main_disclaimer {
+    width: 100%;
+    background-color: rgb(247, 240, 216);
+    grid-area: disclaimer;
+    padding: 2%;
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            font-family: Roboto;
+            padding-top: 1%;
+        }
+
+        p {
+            text-align: center;
+            font-size: 2rem;
+            font-family: Roboto;
+            font-style: italic;
+            padding: 2%;
+        }
+}
+

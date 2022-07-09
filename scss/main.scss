@@ -1,7 +1,10 @@
-@import "variables";
-@import "grid";
-@import "galeria";
-@import "preguntas";
-@import "servicios";
-@import "sobreeltiroconarco";
-@import "index";
+@import "base/animaciones";
+@import "base/base";
+@import "layout/elementos";
+@import "utilities/variables";
+@import "views/galeria";
+@import "views/preguntas";
+@import "views/servicios";
+@import "views/sobreeltiroconarco";
+@import "views/index";
+@import "layout/grid";

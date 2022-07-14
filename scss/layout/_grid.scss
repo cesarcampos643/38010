@@ -218,6 +218,12 @@
                 width: inherit;
             }
         
+            .tarjetaContenedor{
+                margin:auto;
+                padding: auto;
+                height: auto;
+            }   
+
             .main_video_convocatoria h1 {
                 font-family: Roboto;
                 font-size: 3rem;
@@ -283,9 +289,7 @@
     
             }
     
-                .blanco {
-                    display: none;
-                }
+
     
                 .main_queOfrecemos h2 {
                     text-align: center;
@@ -306,3 +310,4 @@
                 grid-area: queofrecemos5;
             }
         }
+        

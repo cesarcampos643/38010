@@ -71,6 +71,13 @@
     width: 50%;
 }
 
+.tarjetaContenedor {
+    background-color: white;
+    margin: 3%;
+    padding: 3%;
+    border-radius: 5% 15%;
+    height: 200px;
+}
 .main_tarjeta_titulo {
     @extend h3;
     height: 50px;
@@ -86,6 +93,8 @@
 
 .main_queOfrecemos1 {
     grid-area: queofrecemos1;
+    @extend .bordeTarjeta;
+
 
 
         &:hover #slide {
@@ -116,19 +125,23 @@
 
 .main_queOfrecemos2 {
     grid-area: queofrecemos2;
-
+    @extend .bordeTarjeta;
 }
 
 .main_queOfrecemos3 {
     grid-area: queofrecemos3;
+    @extend .bordeTarjeta;
 }
 
 .main_queOfrecemos4 {
     grid-area: queofrecemos4;
+    @extend .bordeTarjeta;
 }
 
 .main_queOfrecemos5 {
     grid-area: queofrecemos5;
+    @extend .bordeTarjeta;
+    background-image: linear-gradient(180deg, $colorRojo 0%, $colorAzulClaro 100%);;
 }
 
 /* --------------- FIN QUE OFRECEMOS    -------------------- */

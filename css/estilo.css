@@ -51,6 +51,18 @@ h3, .main_tarjeta_titulo {
 h4, .footer, .main_tarjeta_descripcion {
   font-size: 1.8rem; }
 
+.bordeTarjeta, .main_queOfrecemos1, .main_queOfrecemos2, .main_queOfrecemos3, .main_queOfrecemos4, .main_queOfrecemos5 {
+  border-color: #b3b2b2;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 5% 0%;
+  background-image: linear-gradient(180deg, #00698c 0%, #70c5e2 100%);
+  transition: all .2s ease-in-out; }
+  .bordeTarjeta:hover, .main_queOfrecemos1:hover, .main_queOfrecemos2:hover, .main_queOfrecemos3:hover, .main_queOfrecemos4:hover, .main_queOfrecemos5:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(180deg, #f39638 0%, #70c5e2 100%); }
+
 .divider {
   grid-area: divider;
   border-color: black;
@@ -359,6 +371,13 @@ h4, .footer, .main_tarjeta_descripcion {
 .blanco {
   width: 50%; }
 
+.tarjetaContenedor {
+  background-color: white;
+  margin: 3%;
+  padding: 3%;
+  border-radius: 5% 15%;
+  height: 200px; }
+
 .main_tarjeta_titulo {
   height: 50px;
   margin: 5% 0%; }
@@ -402,7 +421,8 @@ h4, .footer, .main_tarjeta_descripcion {
   grid-area: queofrecemos4; }
 
 .main_queOfrecemos5 {
-  grid-area: queofrecemos5; }
+  grid-area: queofrecemos5;
+  background-image: linear-gradient(180deg, #C1272D 0%, #70c5e2 100%); }
 
 /* --------------- FIN QUE OFRECEMOS    -------------------- */
 /* -------------- SOBRE NOSOTROS ------------ */
@@ -528,6 +548,10 @@ h4, .footer, .main_tarjeta_descripcion {
     font-size: 5rem; }
   .main_video video {
     width: inherit; }
+  .tarjetaContenedor {
+    margin: auto;
+    padding: auto;
+    height: auto; }
   .main_video_convocatoria h1 {
     font-family: Roboto;
     font-size: 3rem;
@@ -574,8 +598,6 @@ h4, .footer, .main_tarjeta_descripcion {
   .main_queOfrecemos1 {
     grid-area: queofrecemos1;
     margin: 0%; }
-  .blanco {
-    display: none; }
   .main_queOfrecemos h2, .main_queOfrecemos .main_tituloSeccion_queOfrecemos {
     text-align: center; }
   .main_queOfrecemos2 {

@@ -23,11 +23,10 @@
     margin: 5% 0%;
 
         h1 {
-            font-family: Roboto;
-            font-size: 6rem;
+           @include textoElegante (white, Arial, 6rem, italic, bold);
             text-align: center;
             margin: 3% 0%;
-            color: white;
+            
         }
 
         h2 {

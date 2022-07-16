@@ -43,3 +43,28 @@ h4 {
         }
 
 }
+
+/* Mixin para definir valores de textos especiales */
+
+@mixin textoElegante($color, $font, $size, $style, $weight) {
+    color: $color;
+    font-family: $font;
+    font-size: $size;
+    font-style: $style;
+    font-weight: $weight;
+}
+
+/* Mixin para definir valores de breakpoint */
+
+@mixin breakpoint ($viewport) {
+    @if map-has-key($breakpoints, $viewport) {
+        $value: map-get($breakpoints, $viewport);
+        
+        @media screen and (min-width: $value) {
+            @content;
+        }
+
+        } 
+    
+    @warn "Unknown `#{$viewport}` in $breakpoints";
+}    

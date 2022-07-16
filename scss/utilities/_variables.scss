@@ -5,3 +5,9 @@ $colorNaranjaClaro: #efe2d5;
 $colorRojo: #C1272D;
 $font: Roboto;
 
+/* -------- mapa para breakpoints ------------------ */
+$breakpoints: ( 
+    sm: 320px,
+    md: 768px,
+    lg: 1000px,
+);

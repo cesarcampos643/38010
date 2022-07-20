@@ -16,7 +16,8 @@
 .header_logo {
     display: flex;
     grid-area: logo;
-    padding: 5%;
+    padding: 1% 5%;
+
 
     img {
         object-fit: contain;
@@ -33,12 +34,23 @@
         border-radius: 5%;
         border-style: groove;
         border-color: lightseagreen;
-        margin: auto 2px;
+        margin: 1px 2px;
         padding: auto;
         background-color: lightskyblue;
         width: 20%;
         display: flex;
-        height: 60px;
+        height: 50px;
+
+        a {
+            font-family: Roboto;
+            color: black;
+            font-size: 1.5rem;
+            text-decoration: none;
+            padding: 1%;
+            cursor: pointer;
+            display:block;
+            text-align: center;
+        }
 
         &:hover {
             background-color: orange;
@@ -47,17 +59,7 @@
             box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
         }
 
-        a {
-            font-family: Roboto;
-            color: blue;
-            font-size: 2rem;
-            text-decoration: none;
-            display: block;
-            cursor: pointer;
-            padding: auto;
-           
-            
-        }
+
     }
 
 }
@@ -65,26 +67,38 @@
 .header_redes {
     display:flex;
     grid-area: redes;
-    padding: 5%;
+    padding: 1% 5%;
     
     h4 {
         text-align: center;
         font-family: Roboto;
+        color: rgb(236, 236, 236);
     }
+
+
 }
 
-.header_redes_img {
+.header_redes_img img {
     padding: 5%;
+    border-radius: 40%;
+
+    &:hover {
+        transform: scale(1.1);
+        transition-duration: 0.5s;
+        border: orange solid 1px;
+    }
+
 }
 
 /* --------- CUERPO ------------ */
 
 .cuerpo {
     display: grid;
-    background-color: #e3f2f8;
+    background: rgb(0,6,33);
+    background: linear-gradient(180deg, $colorAzulClaro 0%, rgba(0,105,140,1) 51%, rgba(218,249,255,1) 100%);
     width: 100%;
     grid-column-gap: 10px;
-    grid-row-gap: 20px;
+    grid-row-gap: 5px;
 }
 
 /* INICIO MAIN */

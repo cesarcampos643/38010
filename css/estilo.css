@@ -44,7 +44,8 @@ h1 {
   font-size: 6rem; }
 
 h2, .main_tituloSeccion_queOfrecemos {
-  font-size: 3rem; }
+  font-size: 3rem;
+  color: white; }
 
 h3, .main_tarjeta_titulo {
   font-size: 2rem; }
@@ -67,7 +68,7 @@ h4, .footer, .main_tarjeta_descripcion {
 /* Mixin para definir valores de textos especiales */
 /* Mixin para definir valores de breakpoint */
 /* MEDIA QUERY PARA DISPOSITIVOS <1000px */
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 1px) and (max-width: 999px) {
   .landing {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(19, auto);
@@ -99,7 +100,7 @@ h4, .footer, .main_tarjeta_descripcion {
     .header_barraNav div a {
       font-family: Roboto;
       color: black;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       text-decoration: none;
       padding: 1%;
       cursor: pointer;
@@ -112,14 +113,24 @@ h4, .footer, .main_tarjeta_descripcion {
   .tarjetaContenedor {
     margin: auto;
     padding: auto;
-    height: auto; }
+    height: 100px;
+    width: 70%; }
   .main_video_convocatoria h1 {
-    font-family: Roboto;
-    font-size: 3rem;
+    color: white;
+    font-family: Arial;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin: 3% 0%; }
+  .main_video_convocatoria h2, .main_video_convocatoria .main_tituloSeccion_queOfrecemos {
+    color: white;
+    font-family: Arial;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
     text-align: center;
     margin: 3% 0%;
-    color: white; }
-  .main_video_convocatoria h2, .main_video_convocatoria .main_tituloSeccion_queOfrecemos {
     display: none; }
   .boton {
     display: none;
@@ -144,9 +155,6 @@ h4, .footer, .main_tarjeta_descripcion {
     font-family: Roboto;
     margin: 3%;
     padding: 10%; }
-  .tarjetaContenedor {
-    margin: auto;
-    height: auto; }
   .blanco {
     display: none; }
   .main_tarjeta_titulo {
@@ -164,24 +172,79 @@ h4, .footer, .main_tarjeta_descripcion {
     background-color: aquamarine; }
   .main_queOfrecemos1 {
     grid-area: queofrecemos1;
+    display: flex;
     margin: 0%; }
   .main_queOfrecemos h2, .main_queOfrecemos .main_tituloSeccion_queOfrecemos {
     text-align: center; }
   .main_queOfrecemos2 {
-    grid-area: queofrecemos2; }
+    grid-area: queofrecemos2;
+    display: flex; }
   .main_queOfrecemos3 {
-    grid-area: queofrecemos3; }
+    grid-area: queofrecemos3;
+    display: flex; }
   .main_queOfrecemos4 {
-    grid-area: queofrecemos4; }
+    grid-area: queofrecemos4;
+    display: flex; }
   .main_queOfrecemos5 {
-    grid-area: queofrecemos5; } }
+    grid-area: queofrecemos5;
+    display: flex; }
+  .main_valores1 {
+    display: flex; }
+  .main_valores2 {
+    display: flex; }
+  .main_valores3 {
+    display: flex; }
+  .main_valores4 {
+    display: flex; }
+  .main_valores5 {
+    display: flex; }
+  .valorImg {
+    display: none; } }
 
+/* -------- MAYOR A 1000PX --------------- */
 @media screen and (min-width: 1000px) {
   /* FOR DESKTOP */
   .landing {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(10, auto);
     grid-template-areas: "logo nav nav nav redes" "title title title title title" "video video video video video" "queofrecemos queofrecemos queofrecemos queofrecemos queofrecemos" "queofrecemos1 queofrecemos2 queofrecemos3 queofrecemos4 queofrecemos5" "nos nos nos nos nos" "val val val val val" "val1 val2 val3 val4 val5" "disclaimer disclaimer disclaimer disclaimer disclaimer" "footer footer footer footer footer"; }
+  /* --------- convocatoria ----------------- */
+  .main_video_convocatoria {
+    grid-area: video;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 5% 0%; }
+    .main_video_convocatoria h1 {
+      color: white;
+      font-family: Arial;
+      font-size: 6rem;
+      font-style: italic;
+      font-weight: bold;
+      text-align: center;
+      margin: 3% 0%; }
+    .main_video_convocatoria h2, .main_video_convocatoria .main_tituloSeccion_queOfrecemos {
+      color: #000000;
+      font-size: 4rem;
+      text-align: center;
+      margin: 2% 0%;
+      font-family: Roboto;
+      color: white; }
+  .boton {
+    background-color: yellow;
+    border-radius: 15%;
+    margin: 2% auto;
+    z-index: 1;
+    width: 30%; }
+    .boton a {
+      cursor: pointer;
+      display: block;
+      font-size: 4rem;
+      color: black;
+      text-decoration: none; }
+  /* -------------- FIN VIDEO -------------- */
   .sobreeltiroconarco {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, auto);
@@ -217,7 +280,7 @@ h4, .footer, .main_tarjeta_descripcion {
 .header_logo {
   display: flex;
   grid-area: logo;
-  padding: 5%; }
+  padding: 1% 5%; }
   .header_logo img {
     object-fit: contain;
     max-width: 100%; }
@@ -230,44 +293,52 @@ h4, .footer, .main_tarjeta_descripcion {
     border-radius: 5%;
     border-style: groove;
     border-color: lightseagreen;
-    margin: auto 2px;
+    margin: 1px 2px;
     padding: auto;
     background-color: lightskyblue;
     width: 20%;
     display: flex;
-    height: 60px; }
+    height: 50px; }
+    .header_barraNav div a {
+      font-family: Roboto;
+      color: black;
+      font-size: 1.5rem;
+      text-decoration: none;
+      padding: 1%;
+      cursor: pointer;
+      display: block;
+      text-align: center; }
     .header_barraNav div:hover {
       background-color: orange;
       transform: scale(110%);
       transition-duration: 0.4s;
       box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
-    .header_barraNav div a {
-      font-family: Roboto;
-      color: blue;
-      font-size: 2rem;
-      text-decoration: none;
-      display: block;
-      cursor: pointer;
-      padding: auto; }
 
 .header_redes {
   display: flex;
   grid-area: redes;
-  padding: 5%; }
+  padding: 1% 5%; }
   .header_redes h4, .header_redes .footer, .header_redes .main_tarjeta_descripcion {
     text-align: center;
-    font-family: Roboto; }
+    font-family: Roboto;
+    color: #ececec; }
 
-.header_redes_img {
-  padding: 5%; }
+.header_redes_img img {
+  padding: 5%;
+  border-radius: 40%; }
+  .header_redes_img img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    border: orange solid 1px; }
 
 /* --------- CUERPO ------------ */
 .cuerpo {
   display: grid;
-  background-color: #e3f2f8;
+  background: #000621;
+  background: linear-gradient(180deg, #70c5e2 0%, #00698c 51%, #daf9ff 100%);
   width: 100%;
   grid-column-gap: 10px;
-  grid-row-gap: 20px; }
+  grid-row-gap: 5px; }
 
 /* INICIO MAIN */
 .main_title {
@@ -517,6 +588,7 @@ h4, .footer, .main_tarjeta_descripcion {
   margin: 3%;
   padding: 3%;
   border-radius: 5% 15%;
+  border: solid grey 1px;
   height: 200px; }
 
 .main_tarjeta_titulo {
@@ -570,7 +642,9 @@ h4, .footer, .main_tarjeta_descripcion {
 .main_sobreNosotros {
   grid-area: nos;
   background-color: #f7f0d8;
-  padding: 2% 0%; }
+  padding: 2% 0%;
+  box-shadow: 0 12px 16px 0 rgba(243, 150, 56, 0.3), 0 17px 50px 0 rgba(0, 105, 140, 0.35);
+  background-image: linear-gradient(180deg, #efe2d5 0%, white 100%); }
 
 .main_tituloSeccion_sobreNosotros {
   display: flex;
@@ -582,6 +656,7 @@ h4, .footer, .main_tarjeta_descripcion {
 .main_sobreNosotros_descripcion {
   font-size: 2rem; }
 
+/*---------------- VALORES ------------------------------ */
 .main_tituloSeccion_valores {
   grid-area: val;
   display: flex;
@@ -589,6 +664,11 @@ h4, .footer, .main_tarjeta_descripcion {
   text-align: center;
   font-family: Roboto;
   padding: 2%; }
+
+.valorImg {
+  border-radius: 40%;
+  border: solid black 1px;
+  width: 50%; }
 
 .main_valores1 {
   grid-area: val1; }
@@ -610,7 +690,9 @@ h4, .footer, .main_tarjeta_descripcion {
   width: 100%;
   background-color: #f7f0d8;
   grid-area: disclaimer;
-  padding: 2%; }
+  padding: 2%;
+  box-shadow: 16px 12px 16px 0 rgba(243, 150, 56, 0.3), 16px 17px 50px 0 rgba(0, 105, 140, 0.35);
+  background-image: linear-gradient(180deg, #efe2d5 0%, white 100%); }
   .main_disclaimer h1 {
     text-align: center;
     font-size: 3rem;

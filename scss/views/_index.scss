@@ -68,6 +68,7 @@
 
 .blanco {
     width: 50%;
+
 }
 
 .tarjetaContenedor {
@@ -75,6 +76,7 @@
     margin: 3%;
     padding: 3%;
     border-radius: 5% 15%;
+    border: solid grey 1px;
     height: 200px;
 }
 .main_tarjeta_titulo {
@@ -93,9 +95,6 @@
 .main_queOfrecemos1 {
     grid-area: queofrecemos1;
     @extend .bordeTarjeta;
-
-
-
         &:hover #slide {
             transition: 1s;
             left: 0;
@@ -140,7 +139,7 @@
 .main_queOfrecemos5 {
     grid-area: queofrecemos5;
     @extend .bordeTarjeta;
-    background-image: linear-gradient(180deg, $colorRojo 0%, $colorAzulClaro 100%);;
+    background-image: linear-gradient(180deg, $colorRojo 0%, $colorAzulClaro 100%);
 }
 
 /* --------------- FIN QUE OFRECEMOS    -------------------- */
@@ -151,6 +150,8 @@
     grid-area: nos;
     background-color: rgb(247, 240, 216);
     padding: 2% 0%;
+    box-shadow: 0 12px 16px 0 rgba($colorNaranjaOscuro, 0.3), 0 17px 50px 0 rgba($colorAzulOscuro,0.35);
+    background-image: linear-gradient(180deg, $colorNaranjaClaro 0%, white 100%);
 }
 
 .main_tituloSeccion_sobreNosotros {
@@ -165,6 +166,8 @@ margin-bottom: 2%;
     font-size:2rem;
 }
 
+/*---------------- VALORES ------------------------------ */
+
 .main_tituloSeccion_valores {
     grid-area: val;
     display: flex;
@@ -172,6 +175,11 @@ margin-bottom: 2%;
     text-align: center;
     font-family: Roboto;
     padding: 2%;
+}
+.valorImg {
+    border-radius:40%;
+    border: solid black 1px;
+    width: 50%;
 }
 
 .main_valores1 {
@@ -203,6 +211,8 @@ margin-bottom: 2%;
     background-color: rgb(247, 240, 216);
     grid-area: disclaimer;
     padding: 2%;
+    box-shadow: 16px 12px 16px 0 rgba($colorNaranjaOscuro, 0.3), 16px 17px 50px 0 rgba($colorAzulOscuro,0.35);
+    background-image: linear-gradient(180deg, $colorNaranjaClaro 0%, white 100%);
 
         h1 {
             text-align: center;

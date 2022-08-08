@@ -30,13 +30,10 @@
     grid-area: nav;
 
     div {
-        border: 1px;
+        border: none;
         border-radius: 5%;
-        border-style: groove;
-        border-color: lightseagreen;
         margin: 1px 2px;
         padding: auto;
-        background-color: lightskyblue;
         width: 20%;
         display: flex;
         height: 50px;
@@ -44,24 +41,39 @@
         a {
             font-family: Roboto;
             color: black;
-            font-size: 1.5rem;
+            font-size: 2.5rem;
             text-decoration: none;
             padding: 1%;
             cursor: pointer;
             display:block;
             text-align: center;
+
+            &:hover {
+                color: rgb(196, 127, 0);
+                transform:scale(110%);
+                transition-duration: 0.4s;
+            }
         }
 
-        &:hover {
-            background-color: orange;
-            transform:scale(110%);
-            transition-duration: 0.4s;
-            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-        }
 
 
     }
 
+}
+.header_redes_img {
+    margin: 0% 1%;
+
+    img {
+        padding: 5%;
+        margin: 0% 1%;
+        border-radius: 40%;
+    
+        &:hover {
+            transform: scale(1.1);
+            transition-duration: 0.5s;
+        }
+    
+    }
 }
 
 .header_redes {
@@ -72,30 +84,20 @@
     h4 {
         text-align: center;
         font-family: Roboto;
-        color: rgb(236, 236, 236);
+        color: black;
     }
 
 
 }
 
-.header_redes_img img {
-    padding: 5%;
-    border-radius: 40%;
 
-    &:hover {
-        transform: scale(1.1);
-        transition-duration: 0.5s;
-        border: orange solid 1px;
-    }
-
-}
 
 /* --------- CUERPO ------------ */
 
 .cuerpo {
     display: grid;
     background: rgb(0,6,33);
-    background: linear-gradient(180deg, $colorAzulClaro 0%, rgba(0,105,140,1) 51%, rgba(218,249,255,1) 100%);
+    background: linear-gradient(0deg, $colorAzulClaro 0%, rgba(0,105,140,1) 51%, rgba(218,249,255,1) 100%);
     width: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 5px;
@@ -118,7 +120,7 @@
 
 .main_description {
     grid-area: desc;
-    color: #777777;
+    color: white;
     display: flex;
     flex-direction: column;
     width: 100%;
